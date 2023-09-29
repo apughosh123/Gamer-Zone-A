@@ -119,3 +119,74 @@ a{
     margin-bottom:-5px;
     height: auto;
 }
+.games-example-heading{
+    text-align: center;
+    font-size: 48px;
+}
+.games-example-sub-heading{
+    text-align: center;
+    font-size: 20px;
+}
+.games-heading-gradiant{
+    background: -webkit-linear-gradient(#db4cc3, #a354e1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.games-card-main{
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 1440px;
+}
+.games-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-content{
+    width: 100%;
+    position: relative;
+    max-width: 300px;
+}
+.card-body{
+    position: relative;
+}
+.card-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ff42a436;
+    display: flex;
+    border: 3px solid #ff42a5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0;
+    transition:opacity 0.5s ease;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+}
+.overlay-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-content:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay-elements{
+    font-weight: 600;
+    color:#ffffff;
+}
+.fa-play-circle{
+    font-size: 30px;
+    color:#ffffff;
+}
+.card-heading{
+    max-width: 300px;
+}
