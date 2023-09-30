@@ -274,3 +274,280 @@ a{
     font-weight: 700;
     color: #ffffff;
 }
+.footer-menu{
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer-menu-parent{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-icons{
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer-icons>li:hover i{
+    color: #ff42a5;
+}
+
+.footer-icon-parent{
+    margin:0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 30px;
+}
+.footer-icons>li>a>i{
+    font-size: 36px;
+    color: #ffffff;
+}
+.terms-and-conditions{
+    margin: 0 auto;
+    width: 50%;
+}
+.terms-and-conditions-menu{
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.trc-text-color{
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+.copyright{
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .header-menu{
+        flex-direction: column;
+    }
+    .site-menu{
+        flex-direction: column;
+    }
+    .site-menu>a,p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .promotion-body{
+        flex-direction: column;
+    }
+    .promotion-image>img{
+        width: 100%;
+        height: auto;
+    }
+    .promotion-text{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .promotion-text>h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .promotion-text>h2{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 50px;
+        background: -webkit-linear-gradient(#db4cc3, #a354e1);
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .promotion-texr>p{
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #534c64;
+    }
+
+    .button-area{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .signin-btn{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .gorouge-btn{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .games-example-heading{
+        font-size: 32px;
+    }
+
+    .card-image{
+        width: 100%;
+    }
+    .games-card{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .install-area{
+        padding-top: 30px;
+    }
+    .install-text>h1{
+        font-size: 28px;
+    }
+    .install-body{
+        align-items: center;
+        flex-direction: column;
+    }
+    .games{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .games-main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+    .games-icons{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .games-icons>img{
+        width: 36%;
+    }
+    .games-name-with-icon{
+        padding-left: 5px;
+    }
+    .games-icon>h4{
+        font-size: 9px;
+    }
+    .footer-menu{
+        display: grid;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-menu>li>a{
+        font-size: 12px;
+        text-align: center;
+    }
+    .footer-logo>img{
+        width: 40%;
+    }
+    .footer-menu-parent{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-icons{
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-icon-parent{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-icons>li>a>i{
+        font-size: 36px;
+        color: #ffffff;
+    }
+    .terms-and-conditions-menu{
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .terms-and-conditions{
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and(max-width:960px) {
+    .promotion-body{
+        flex-direction: column;
+    }
+    .promotion-image>img{
+        height: auto;
+        width:100%;
+    }
+    .promotion-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .promotion-text>h1{
+        line-height: 20px;
+        font-size: 30px;
+
+    }
+    .promotion-text>h2{
+        background: -webkit-linear-gradient(#db4cc3, #a354e1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 50px;
+        font-size: 60px;
+    }
+    .promotion-text>p{
+        font-weight: bold;
+        font-size: 20px;
+        color: #534c64;
+    }
+    .signin-btn{
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+    .gorouge-btn{
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+    .games-card{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .games-main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 25px;
+    }
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-icon-parent{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .terms-and-conditions-menu{
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 0px;
+    }
+    .terms-and-conditions{
+        width: 80%;
+
+    }
+    .footer-menu-parent{
+        width: 80%;
+
+    }
+    .footer-menu>li{
+        text-align: start;
+        font-size: 16px;
+    }
+}
